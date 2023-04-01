@@ -1,0 +1,39 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // Formatter
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.fixAll.stylelint": true,
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  // Hide files
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    // "**/.vscode/": true,
+    "**/.yarn/": true,
+    "**/.tool-versions": true,
+    // "**/.husky": true,
+    "**/.next": true,
+    // "**/src/@types/": true,
+    // "**/.github/": true,
+    "**/yarn.lock": true,
+    // ".eslintrc.json":true,
+    // ".prettierrc":true,
+    ".yarnrc.yml": true
+    // ".prettierignore":true,
+    // ".gitifnore":true,
+    // "**/next-env.d.ts":true,
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+}

@@ -1,0 +1,61 @@
+export default {
+  grid: {
+    container : '130rem',
+    gutter    : '3.2rem',
+  },
+  screen: {
+    phone   : '640px',
+    xlPhone : '768px',
+    tablet  : '1024px',
+    smPc    : '1100px',
+    pc      : '1280px',
+    xlPc    : '1535px',
+  },
+  border: {
+    radius: '0.4rem',
+  },
+  box: {
+    shadow: '0 8px 8px rgba(0, 0, 0, 0.08)',
+  },
+  font: {
+    thin   : 100,
+    light  : 300,
+    normal : 400,
+    bold   : 700,
+    bolder : 900,
+    sizes  : {
+      xs    : '0.75rem',
+      sm    : '0.875rem',
+      md    : '1rem',
+      lg    : '1.125rem',
+      xl    : '1.25rem',
+      '2xl' : '1.5rem',
+      '3xl' : '1.875rem',
+      '4xl' : '2rem',
+      px    : (size: number) => `${size / 16}rem`,
+    },
+  },
+  spacings: {
+    xxxsmall : '0.8rem',
+    xxsmall  : '1rem',
+    xsmall   : '1.6rem',
+    small    : '2.4rem',
+    medium   : '3.2rem',
+    large    : '4.0rem',
+    xlarge   : '4.8rem',
+    xxlarge  : '5.6rem',
+  },
+  layers: {
+    alwaysOnBottom : -50,
+    background     : -10,
+    base           : 10,
+    menu           : 20,
+    overlay        : 30,
+    modal          : 40,
+    alwaysOnTop    : 50,
+  },
+  transition: {
+    default : '0.3s ease-in-out',
+    fast    : '0.1s ease-in-out',
+  },
+} as const;
