@@ -16,7 +16,7 @@ export const FlexWrapper = styled('div')`
 `;
 
 export const SectionArea = styled('div')<{ rtl?: boolean }>`
-  ${({ theme, rtl }) => css`
+  ${({ rtl }) => css`
     padding: 3rem;
     min-height: 45vh;
     text-align: ${rtl && 'right'};

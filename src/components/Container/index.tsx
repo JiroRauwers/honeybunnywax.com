@@ -50,10 +50,6 @@ const Container: FC<Props> & {
     setImg(FilteredChildren.SelectChild(ContainerImage));
   }, [FilteredChildren]);
 
-  useEffect(()=> {
-    console.log('rest', rest);
-  }, rest);
-
   return (
     <S.Container
       ref={ref}

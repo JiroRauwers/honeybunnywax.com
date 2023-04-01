@@ -28,7 +28,7 @@
     "**/yarn.lock": true,
     // ".eslintrc.json":true,
     // ".prettierrc":true,
-    ".yarnrc.yml": true
+    // ".yarnrc.yml": true
     // ".prettierignore":true,
     // ".gitifnore":true,
     // "**/next-env.d.ts":true,
