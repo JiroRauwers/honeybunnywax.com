@@ -5,7 +5,7 @@ export const FilterChildren = (children: ReactNode) => {
     return isValidElement(child);
   }) as React.ReactElement[];
 
-  const SelectChild = <T extends unknown>(selected: FC<T>) =>
+  const SelectChild = <T>(selected: FC<T>) =>
     filtered.filter((child) => child.type === selected) || null;
 
   return {

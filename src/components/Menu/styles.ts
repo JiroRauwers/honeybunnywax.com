@@ -76,24 +76,6 @@ const scaleOut = keyframes`
   }
 `;
 
-const fadeIn = keyframes`
- from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const fadeOut = keyframes`
- from {
-    opacity: 1;
-  }
-  to {
-    opacity: 2;
-  }
-`;
-
 export const Container = styled(dContainer)`
   margin: 0 auto;
   display: grid;
@@ -171,8 +153,9 @@ export const NavigationMenuRoot = styled(NavigationMenu.Root)`
   margin: -0.5vw;
   z-index: ${({ theme }) => theme.layers.menu};
 
-
-  border-bottom: 3px solid ${({ theme }) =>  rgba({ ...parseToRgb(theme.colors.indianRed), alpha: 0.4 })};
+  border-bottom: 3px solid
+    ${({ theme }) =>
+    rgba({ ...parseToRgb(theme.colors.indianRed), alpha: 0.4 })};
 
   background-color: ${({ theme }) =>
     rgba({ ...parseToRgb(theme.colors.indianRed), alpha: 0.4 })};
@@ -184,7 +167,6 @@ export const NavigationMenuList = styled(NavigationMenu.List)`
   justify-content: center;
   align-items: center;
   height: 4rem;
-
 
   border-radius: 6px;
   list-style: none;

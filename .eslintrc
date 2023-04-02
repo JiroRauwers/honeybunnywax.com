@@ -26,6 +26,7 @@
     "sourceType": "module",
     "warnOnUnsupportedTypeScriptVersion": false
   },
+  "root": true,
   "plugins": [
     "react",
     "@typescript-eslint",
